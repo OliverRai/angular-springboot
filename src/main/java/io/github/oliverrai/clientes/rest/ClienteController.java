@@ -55,7 +55,8 @@ public class ClienteController {
         repository
                 .findById(id)
                 .map(cliente -> {
-                    clienteAtualizado.setId(cliente.getId());
+                    cliente.setNome(clienteAtualizado.getNome());
+                    cliente.setCpf(clienteAtualizado.getCpf());
                     return repository.save(clienteAtualizado);
                 })
                 .orElseThrow(() ->
