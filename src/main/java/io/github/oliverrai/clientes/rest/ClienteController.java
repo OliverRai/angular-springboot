@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.persistence.criteria.CriteriaBuilder;
+
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {
@@ -33,5 +35,18 @@ public class ClienteController {
     public Cliente getInfo(@PathVariable Integer id){
         return repository.findById(id).orElseThrow(() ->
                 new ResponseStatusException(HttpStatus.NOT_FOUND));
+    }
+
+    @DeleteMapping("{id}")
+    public void deletar(@PathVariable Integer id){
+        repository
+                .findById(id)
+                .map(cliente -> {
+                    repository.delete(cliente);
+                    return Void.TYPE;
+                })
+                .orElseThrow(() ->
+                        new ResponseStatusException(HttpStatus.NOT_FOUND));
+
     }
 }
