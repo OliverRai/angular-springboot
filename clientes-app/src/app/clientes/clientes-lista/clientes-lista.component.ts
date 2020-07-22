@@ -1,3 +1,5 @@
+import { ClientesService } from './../../clientes.service';
+import { Cliente } from './../clientes-form/cliente';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesListaComponent implements OnInit {
 
-  constructor() { }
+  clientes: Cliente[] = [];
+
+  constructor(private service: ClientesService) { 
+      
+  }
+
 
   ngOnInit(): void {
+    this.clientes = this.service.getCliente();
+
   }
 
 }
