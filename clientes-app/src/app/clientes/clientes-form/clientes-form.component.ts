@@ -21,6 +21,10 @@ export class ClientesFormComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  voltarParaListagem(){
+    this.router.navigate(["/clientes-lista"])
+}
+
   onSubmit() {
     this.service
       .salvar(this.cliente)
@@ -33,9 +37,5 @@ export class ClientesFormComponent implements OnInit {
         this.errors = errorResponse.error.errors;   
       }
       )
-  }
-
-  voltarParaListagem(){
-      this.router.navigate(["/clientes-lista"])
   }
 }
