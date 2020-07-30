@@ -38,7 +38,9 @@ export class ClientesListaComponent implements OnInit {
     this.service
       .deletar(this.clienteSelecionado)
       .subscribe( response =>
-        this.mensagemSucesso = "Cliente deletado com sucesso!",
+        {this.mensagemSucesso = "Cliente deletado com sucesso!",
+        this.ngOnInit();
+      },
         erro => this.mensagemErro = "Erro ao deletar cliente!"
       )
   }
