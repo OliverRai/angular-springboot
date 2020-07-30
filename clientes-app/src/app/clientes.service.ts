@@ -20,7 +20,7 @@ export class ClientesService {
     return this.http.put<any>(`http://localhost:8080/api/clientes/${cliente.id}`, cliente)
  }
 
-   deletar( cliente : Cliente ) : Observable<Cliente>{
+   deletar( cliente : Cliente ) : Observable<any>{
      return this.http.delete<Cliente>(`http://localhost:8080/api/clientes/${cliente.id}`)
    }
 

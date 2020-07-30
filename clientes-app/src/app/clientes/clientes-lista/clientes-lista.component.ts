@@ -10,11 +10,13 @@ import { Router } from '@angular/router'
 export class ClientesListaComponent implements OnInit {
 
   clientes: Cliente[] = [];
-  clienteSelecionado : Cliente;
+  clienteSelecionado: Cliente;
+  mensagemSucesso : String;
+  mensagemErro : String;
 
-  constructor(private service: ClientesService, 
-    private router : Router) { 
-      
+  constructor(private service: ClientesService,
+    private router: Router) {
+
   }
 
   ngOnInit(): void {
@@ -24,12 +26,21 @@ export class ClientesListaComponent implements OnInit {
 
   }
 
-  novoCadastro(){
+  novoCadastro() {
     this.router.navigate(['/clientes-form']);
   }
 
-  prepararDelecao(cliente : Cliente){
+  prepararDelecao(cliente: Cliente) {
     this.clienteSelecionado = cliente;
+  }
+
+  deletarCliente(cliente: Cliente) {
+    this.service
+      .deletar(this.clienteSelecionado)
+      .subscribe( response =>
+        this.mensagemSucesso = "Cliente deletado com sucesso!",
+        erro => this.mensagemErro = "Erro ao deletar cliente!"
+      )
   }
 
 }
