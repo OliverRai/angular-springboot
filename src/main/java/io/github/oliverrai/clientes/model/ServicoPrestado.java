@@ -1,5 +1,6 @@
 package io.github.oliverrai.clientes.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.Getter;
 
@@ -26,5 +27,6 @@ public class ServicoPrestado {
     private BigDecimal valor;
 
     @Column
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate data;
 }
