@@ -1,6 +1,6 @@
 package io.github.oliverrai.clientes.rest;
 
-import io.github.oliverrai.clientes.exception.ApiErrors;
+import io.github.oliverrai.clientes.rest.exception.ApiErrors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;

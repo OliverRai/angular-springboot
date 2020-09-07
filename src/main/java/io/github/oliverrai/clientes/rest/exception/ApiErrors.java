@@ -1,8 +1,7 @@
-package io.github.oliverrai.clientes.exception;
+package io.github.oliverrai.clientes.rest.exception;
 
 import lombok.Getter;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
