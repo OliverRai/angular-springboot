@@ -1,8 +1,8 @@
 import { prependOnceListener } from "process";
 
 export class ServicoPrestado{
-    descricao;
-    preco;
-    data;
-    idCliente;
+    descricao:string;
+    preco:string;
+    data:string;
+    idCliente:number;
 }
