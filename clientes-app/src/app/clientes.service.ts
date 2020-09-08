@@ -1,4 +1,4 @@
-import { Cliente } from './clientes/clientes-form/cliente';
+import { Cliente } from './clientes/cliente';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

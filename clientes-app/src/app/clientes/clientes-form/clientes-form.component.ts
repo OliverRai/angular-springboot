@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
 
-import { Cliente } from '../clientes-form/cliente';
+import { Cliente } from '../cliente';
 import { ClientesService } from '../../clientes.service';
 import { Observable } from 'rxjs';
 

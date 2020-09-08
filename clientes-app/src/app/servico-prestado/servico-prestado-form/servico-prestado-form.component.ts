@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cliente } from './../../clientes/clientes-form/cliente';
+import { Cliente } from '../../clientes/cliente';
 import { ClientesService } from '../../clientes.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ClientesService } from '../../clientes.service';
 })
 export class ServicoPrestadoFormComponent implements OnInit {
 
-  clientes : Cliente[] = [];
+  clientes: Cliente[] = [];
 
   constructor(
     private clienteService : ClientesService
