@@ -31,6 +31,9 @@
     </form>
     <br/>
     <div class="row">
+        <div class="alert alert-warning" role="alert" *ngIf="message">
+            {{message}}
+        </div>
         <div class="col-md-12">
             <table class="table">
                 <thead>
