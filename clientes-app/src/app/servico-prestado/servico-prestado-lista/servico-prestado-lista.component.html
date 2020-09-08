@@ -20,7 +20,7 @@
                 </select>
             </div>
         </div>
-        <br>
+        <br/>
         <div class="row">
             <div class="col-md-3">
                 <button type="submit" class="btn btn-primary">
@@ -29,4 +29,25 @@
             </div>
         </div>
     </form>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <th>Cliente</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let s of lista">
+                        <td>{{ s.cliente.nome }}</td>
+                        <td>{{ s.descricao }}</td>
+                        <td>{{ s.valor }}</td>
+                        <td>{{ s.data }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
