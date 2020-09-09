@@ -11,12 +11,14 @@ import { TemplateModule } from './template/TemplateModule'
 import { HomeComponent } from './home/home.component'
 import { ClientesModule } from './clientes/clientes.module'
 import { ClientesService } from './clientes.service';
-import { ServicoPrestadoService } from './servico-prestado.service'
+import { ServicoPrestadoService } from './servico-prestado.service';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
