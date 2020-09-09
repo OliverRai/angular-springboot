@@ -1,8 +1,9 @@
+<div class="container">
 <h1 class="mt-4">Serviço Prestado</h1>
 <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item active">Novo</li>
 </ol>
-
+</div>
 <div class="container">
     <form #form="ngForm" (submit)="onSubmit()">
         <div class="row">
@@ -61,7 +62,12 @@
             <div class="col md-3">
                 <button type="submit" class="btn btn-success">
                     <i class="fa fa-save"></i>
-                    Salvar</button>
+                    Salvar
+                </button>
+                <button type="button" class="btn btn-danger" routerLink="/servico-prestado-lista">
+                    <i class="fa fa-arrow-alt-circle-left"></i> Cancelar
+                </button>
+                     
             </div>
         </div>
     </form>
