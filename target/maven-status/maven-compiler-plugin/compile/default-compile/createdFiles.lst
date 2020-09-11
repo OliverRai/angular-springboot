@@ -1,0 +1,17 @@
+io/github/oliverrai/clientes/rest/Dto/ServicoPrestadoDTO.class
+io/github/oliverrai/clientes/ClientesApplication.class
+io/github/oliverrai/clientes/rest/UsuarioController.class
+io/github/oliverrai/clientes/repository/ServicoPrestadoRepository.class
+io/github/oliverrai/clientes/rest/ServicoPrestadoController.class
+io/github/oliverrai/clientes/rest/exception/ApiErrors.class
+io/github/oliverrai/clientes/model/Cliente.class
+io/github/oliverrai/clientes/config/InternacionalizacaoConfig.class
+io/github/oliverrai/clientes/model/Usuario.class
+io/github/oliverrai/clientes/repository/UsuarioRepository.class
+io/github/oliverrai/clientes/repository/ClienteRepository.class
+io/github/oliverrai/clientes/rest/ClienteController.class
+io/github/oliverrai/clientes/util/BigDecimalConverter.class
+io/github/oliverrai/clientes/model/ServicoPrestado.class
+io/github/oliverrai/clientes/config/SecurityConfig.class
+io/github/oliverrai/clientes/config/WebConfig.class
+io/github/oliverrai/clientes/rest/ApplicationControllerAdvice.class
