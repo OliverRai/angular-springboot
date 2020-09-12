@@ -3,6 +3,7 @@
 <h4>Essas são as técnologias utilizadas:</h4>
 <ul>
 <li>Java</li>
+<li>TypeScript</li>
 <li>HTML</li>
 <li>CSS</li>
 <li>Angular 9</li>
