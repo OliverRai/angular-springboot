@@ -39,6 +39,19 @@ export class AuthService {
     return false;
   }
 
+  getUsuarioAutenticado(){
+    const token = this.obterToken();
+    if(token){
+      const usuario = this.jwtHelper.decodeToken(token).user_name;
+      return usuario;
+    }
+    return null;
+  }
+
+  encessarSessao(){
+    localStorage.removeItem('access_token');
+  }
+
   salvar(usuario : Usuario) : Observable<any>{
     return this.http.post<any>(this.apiURL, usuario)
   }
